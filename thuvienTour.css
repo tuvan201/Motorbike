@@ -1,0 +1,257 @@
+*{
+    font-family: "Myriad Pro Regular",arial,sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#header
+{
+    width: 100%;    
+    height:80px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#menu{
+    margin-right:270px;
+    list-style-type: none;
+}
+#menu li a:hover{
+    color: #90B1BA;
+    transition: ease-in-out 0.2s;
+}
+#header ul >li{
+    float: left;
+    margin-right: 15px;
+}
+#header ul li a{
+    text-decoration: none;
+    color:aliceblue;
+    transition: ease-in-out 0.2s;   
+}
+#headertopright{
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box ;
+}
+.hotline{
+    background-color: brown;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    float: left;
+    margin-right: 28px;
+}
+#headertopright button{
+    background-color: black;
+    border: none;
+}
+#menu li >a{
+    font-size: 14px;
+}
+#submenu{
+    height: 80px;
+    width: 100%;
+}
+.top-right-menu{
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 5;
+    right:0;
+    bottom: 0;
+    top:20%;
+}
+.top-right-menu ul{
+    background-color: brown;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.top-right-menu ul .icon1{
+    width: 50px;
+    height: 50px;
+    border-bottom: white 1px solid;
+    position:relative;
+}
+.top-right-menu ul li img{
+    padding-left: 7px;
+    padding-top:6px;
+    float: left;
+}
+.icon-submenu{
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    font-size: 14px;
+    background-color: #dbd4d4;
+    color: #cb1e33;
+    right: -130px;
+    line-height: 50px;
+    text-align: center;
+}
+.top-right-menu ul li:hover .icon-submenu{
+    right: 50px;
+    transition: ease-in-out 0.4s;
+}
+.top-right-menu ul .icon{
+     width: 50px;
+    height: 50px;
+    position:relative;
+}
+.footer{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.foo{
+    margin-right: 150px;
+}
+.foo a{
+     font-size: 18px;
+}
+.foo .foo_ct a{
+    text-decoration: none;
+    color: black;
+}
+.foo .foo_ct a:hover p{
+    color: #cb1e33;
+}
+.foo .foo_ct p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 15px;
+}
+.foo_it1{
+    width: 350px;
+    height: auto;
+    margin-left: 40px;
+    box-sizing: border-box;
+}
+.foo_it1 p{
+    font-size: 20px;
+}
+.foo_span{
+    margin-right: 15px;
+    font-size: 18px;
+    float: left;
+}
+.foo_span1{
+    margin-right: 15px;
+    font-size: 18px;
+    float: left;
+    height:105px ;
+}
+.foo_span2{
+    margin-right: 15px;
+    font-size: 18px;
+    float: left;
+    height:60px ;
+}
+
+.foo_ct1,.foo_ct2,.foo_ct3{
+    margin-bottom: 27px;
+    margin-left: 28px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.foo_ct4{
+    margin-bottom: 27px;
+    margin-left: 10px;
+}
+#foo_ct4_icon{
+    font-size: 30px;
+    float: left;
+    margin: 0;
+    border: 1px solid black;
+    display: block;
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: rgba(0, 0, 0, 0.8);
+}
+#foo_ct4_icon1{
+    font-size: 30px;
+    float: left;
+    margin: 0;
+    border: 1px solid black;
+    display: block;
+    padding:  5px;
+    color: rgba(0, 0, 0, 0.8);
+}
+#foo_ct4_icon:hover{
+    color: white;
+    background-color: black;
+}
+#foo_ct4_icon1:hover{
+    color: white;
+    background-color: black;
+}
+.foo_ct1_it1{
+    width: 285px;
+}
+#listthuvien{
+    width: 1170px;
+    height: auto;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+}
+#listthuvien .item a:before{
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        right: 4px;
+        bottom: 8px;
+        border: 1px solid #fff;
+        z-index: 2;
+        transition: all 0.3s;
+        display: none;
+}
+#listthuvien .item a:hover:before{
+    opacity: 1;
+    display: block;
+}
+#listthuvien .item a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    background-color: transparent;
+    text-decoration: none;
+}
+#listthuvien .item{
+    width: 374px;
+    height: 210px;
+    background-color: black;
+}
+#listthuvien .item a img{
+    width: 374px;
+    height: 210px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s;
+}
+#listthuvien .item a:hover{
+    text-decoration: underline;
+    outline: 0;
+}
+#listthuvien .item a:hover img{
+    opacity: 0.5;
+}
